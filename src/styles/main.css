@@ -25,11 +25,14 @@ html, body {
 
 .widget {
     display: grid;
+    grid-template-columns: 390px;
+    grid-template-rows: 330px 140px;
+    grid-template-areas: "top"
+                         "bottom";
 }
 
 .container__top {
-    width: 390px;
-    height: 330px;
+    grid-area: top;
     background: #f2f9f9;
     border-radius: 10px 10px 0 0;
     padding: 20px 0 20px 20px;
@@ -86,8 +89,6 @@ html, body {
 
 .weather__info {
     display: grid;
-    grid-template-areas: "a"
-                         "b";
     align-content: center;
     margin: 0 30px 0 0;
 }
@@ -111,8 +112,7 @@ html, body {
 }
 
 .container__bottom {
-    width: 390px;
-    height: 140px;
+    grid-area: bottom;
     background: #2a3032;
     border-radius: 0 0 10px 10px;
     padding: 40px 40px 20px 40px;

@@ -4,8 +4,13 @@
     }
 
     .container-wrap {
-        align-items: stretch;
-        justify-items: stretch;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+
+    .widget {
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
     }
 
     .container__top {
